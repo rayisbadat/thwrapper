@@ -28,7 +28,7 @@ add the following snippet to .travis.yaml under "before_install:"
 
      - pip install -r thog_requirements.txt
      - wget https://raw.githubusercontent.com/uc-cdis/thWrapper/master/th_wrapper.py
-     - python th_wrapper.py -w truffles.json -c thog_config.json -g file:///${PWD}/ --check
+     - python th_wrapper.py -w truffles.json -c thog_config.json -g file://${PWD}/ --check
      
 from now on any future commit is checked against that whitelist. 
 
