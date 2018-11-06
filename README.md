@@ -7,7 +7,7 @@ Slowly growing into a huge mess. Will probably rewrite trufflehog to remove that
 
 1.) pip install trufflehog locally
 
-2.) wget my shite script:
+2.) wget my script:
 
      wget https://raw.githubusercontent.com/uc-cdis/thWrapper/master/th_wrapper.py
 
