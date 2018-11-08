@@ -129,7 +129,10 @@ def promptAnswer(conf, question_string):
     #Prompt user for question and store answer as boolean
     answer = ''
     while answer not in YNO:
-        answer = input("{} [y/N]  ".format(question_string))
+        if sys.version_info >= 3:
+            answer = input("{} [y/N]  ".format(question_string))
+        else:
+            answer = raw_input("{} [y/N] ".format(question_string))
         if answer in YES:
             printDebug(conf, "Answered {}".format(answer))
             return True
