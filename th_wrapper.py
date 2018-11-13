@@ -49,7 +49,7 @@ DEFAULT_CONFIG = {
   "flags": {
       "do_regex": True,
       "do_entropy": True,
-      "max_depth": 100
+      "max_depth": 50
     },
   "gitRemote": None,
   "whitelistF": "truffles.json",
@@ -129,7 +129,7 @@ def promptAnswer(conf, question_string):
     #Prompt user for question and store answer as boolean
     answer = ''
     while answer not in YNO:
-        if sys.version_info >= 3:
+        if sys.version_info[0] >= 3:
             answer = input("{} [y/N]  ".format(question_string))
         else:
             answer = raw_input("{} [y/N] ".format(question_string))
