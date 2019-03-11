@@ -56,7 +56,8 @@ DEFAULT_CONFIG = {
   "configF": "thog_config.json",
   "hardExcludes": [
                     "thog_config.json",
-                    "truffles.json"
+                    "truffles.json",
+                    "Pipfile.lock",
                   ],
   "regexRules": {
     "Slack Token": "(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
